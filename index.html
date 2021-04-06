@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Banko</title>
+  </head>
+  <body>
+    <!-- Login Nav -->
+    <nav class="login-nav">
+      <p>log in</p>
+      <img class="logo" src="img/bank.png" alt="Logo" srcset="" />
+      <form class="login" action="">
+        <input
+          class="login-input login-input-user"
+          type="text"
+          placeholder="user"
+          name="user"
+        />
+        <input
+          class="login-input login-input-pin"
+          type="password"
+          name="pin"
+          maxlength="4"
+          placeholder="pin"
+        />
+        <img class="login-btn" src="img/arrow-login.png" />
+      </form>
+    </nav>
+
+    <!-- Logout Nav -->
+    <nav class="logout-nav">
+      <p class="status">welcome</p>
+      <img class="logo" src="img/bank.png" alt="Logo" srcset="" />
+      <div class="logout">
+        <p class="logout-txt">log out</p>
+        <img class="logout-btn" src="img/arrow-logout.png" >
+      </div>
+    </nav>
+
+    <!-- Intro UI -->
+    <section class="intro">
+      <h1>BANKO</h1>
+      <p>simple</p>
+      <p>fast &</p>
+      <p">free</p>
+      <img class="logoblack" src="img/logoblack.png" alt="Logo" />
+    </section>
+
+    <!-- Logged UI -->
+    <main class="app">
+      <!-- Balance -->
+      <h2>current balance</h2>
+      <div class="balance">
+        <div>
+          <p class="date">01/01/2025</p>
+        </div>
+        <p class="balance-value">0000€</p>
+      </div>
+
+      <!-- Transfer -->
+      <div class="transfer">
+        <h2>transfer</h2>
+        <form class="box form-transfer">
+          <div class="form-input-box">
+            <div class="form-input-item">
+              <input class="form-input form-input-to" type="text" placeholder="user">
+              <label class="form-label">transfer to</label>
+            </div>
+            <div class="form-input-item">
+              <input class="form-input form-input-transfer-amount" type="number" placeholder="amount">
+              <label class="form-label">amount</label>
+            </div>
+          </div>
+          <div class="form-btn-box">
+            <img class="form-btn form-btn-transfer" src="img/transfer.png" />
+          </div>
+        </form>
+      </div>
+
+      <!-- Movements -->
+      <div class="movements-sort">
+        <h2>movements</h2> 
+        <button class="sort">sort</button> 
+      </div>
+      <div class="movements">
+        <div class="movements-row">
+          <div class="movements-type movements-type-deposit">2 deposit</div>
+          <div class="movements-date">3 days ago</div>
+          <div class="movements-value">4000€</div>
+        </div>
+        <div class="movements-row">
+          <div class="movements-type movements-type-withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements-date">01/01/2028</div>
+          <div class="movements-value">-378€</div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary">
+
+        <div class="summary-item">
+          <div class="summary-label summary-label-in">in</div>
+          <div class="summary-value summary-value-in">0000€</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-label summary-label-out">out</div>
+          <div class="summary-value summary-value-out">0000€</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-label summary-label-interest">interest</div>
+          <div class="summary-value summary-value-interest">0000€</div>
+        </div>
+      </div>
+
+      <!-- Loan -->
+      <div class="loan">
+      <h2>request loan</h2>
+      <form class="box form-loan">
+        <div class="form-input-box">
+          <div class="form-input-item">
+            <input class="form-input form-input-loan-amount" type="number" placeholder="amount">
+            <label class="form-label">amount</label>
+          </div>
+        </div>
+        <div class="form-btn-box">
+          <img class="form-btn form-btn-loan" src="img/loan.png">
+      </div>
+      </form>
+    </div>
+
+    <!-- Close Account -->
+    <div class="close">
+      <h2>close account</h2>
+      <form class="box form-close">
+        <div class="form-input-box">
+          <div class="form-input-item">
+            <input class="form-input form-input-close-pin" type="number" placeholder="confirm pin">
+            <label class="form-label">confirm pin</label>
+          </div>
+        </div>
+        <div class="form-btn-box">
+          <img class="form-btn form-btn-close" src="img/close.png" >
+        </div>
+      
+      </form>
+    </div>
+
+    <!-- Logout -->
+    <div class="timer">
+      <h2>log out in</h2>
+      <div class="box timer-box">
+        <div>
+          <p class="timer-label">...</p>         
+        </div>
+        <div class="form-btn-box">
+          <img class="timer-icon" src="img/timer.png"> 
+        </div>
+      </div>
+    </div>      
+    </main>
+
+    <footer>
+      <p>© 2020 Renato Magrini.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

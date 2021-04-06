@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62, 5%;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #eeeded;
+  color: black;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  background-color: #eeeded;
+  width: 100px;
+  height: 6vh;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 12px;
+  border: 0 #eeeded;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4vw;
+  background-color: #776d8a;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login-input {
+  text-align: center;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+}
+
+.logout-txt {
+  margin-right: 0.5rem;
+}
+
+/* Intro */
+
+h1 {
+  font-size: 3rem;
+}
+
+.logoblack {
+  width: 150px;
+  margin: 50px;
+}
+
+section {
+  padding: 8%;
+}
+
+/* Logged UI */
+
+main {
+  padding: 8% 20%;
+  text-align: left;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #776d8a1f;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.balance-value {
+  font-size: 2.5rem;
+  margin-left: auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.form-input-box {
+  display: flex;
+  align-items: center;
+}
+
+.form-input-item {
+  padding-right: 1rem;
+}
+
+.form-input {
+  text-align: left;
+  display: flex;
+}
+
+.form-transfer {
+  background-color: #62929ab9;
+}
+
+.form-loan {
+  background-color: #d89116c5;
+}
+
+.sort {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: #eeeded;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 4px;
+  margin-left: auto;
+}
+.movements-sort {
+  display: flex;
+}
+
+.movements {
+  background-color: #f9f3f3;
+  border-radius: 1rem;
+}
+
+.movements-row {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 3px solid #eeeded;
+}
+
+.movements-type {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 50%;
+}
+
+.movements-type-deposit {
+  background-color: #519872;
+}
+
+.movements-type-withdrawal {
+  background-color: #b68973;
+}
+
+.movements-value {
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2%;
+  background-color: #776d8a1f;
+  margin: 1rem 0 2rem 0;
+}
+
+.summary-item {
+  display: inline-table;
+}
+
+.summary-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  width: max-content;
+}
+
+.summary-value {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.summary-label-in {
+  background-color: #519872;
+}
+
+.summary-label-out {
+  background-color: #b68973;
+}
+
+.summary-label-interest {
+  background-color: #d89216;
+}
+
+.form-close {
+  background-color: #cc551ebe;
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer-label {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.timer-box {
+  background-color: #4a39338e;
+  width: 150px;
+  margin: auto;
+  display: inline-block;
+}
+
+footer {
+  font-size: 0.5rem;
+  padding: 5%;
+}
+
+/**************************************************/
+/**************************************************/
+
+@media (max-width: 690px) {
+  /* Nav */
+  nav {
+    padding: 0.5rem 4vw;
+    font-size: 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logout-txt {
+    margin-right: 0.2rem;
+  }
+
+  .login-input {
+    margin-left: auto;
+  }
+
+  .logout {
+    margin-left: auto;
+  }
+
+  /* Intro UI */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .logoblack {
+    margin: 20%;
+  }
+
+  /* Logged UI */
+
+  main {
+    padding: 6%;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .balance-value {
+    font-size: 1.6rem;
+  }
+
+  .form-btn-box {
+    margin-left: auto;
+  }
+
+  .summary-value {
+    font-size: 1.2rem;
+  }
+
+  .logout-timer {
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+}
