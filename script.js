@@ -85,7 +85,7 @@ const initial = () => {
 };
 initial();
 
-// Creating usernames: crete a new key 'username' in each object.
+// Creating usernames: create a new key 'username' in each object.
 const createUsernames = (accs) => {
   accs.forEach((acc) => {
     acc.username = acc.owner
