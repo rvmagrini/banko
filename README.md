@@ -1,13 +1,14 @@
 # Banko
 
 Login and PIN automatically generated.
-Transfer money, request loan, close account, log out timer.
+Features implemented: transfer money to other active users, request loans, close account, log out timer.
 
-Users:
--> jjca - pin: 1111
--> bbki - pin: 2222
--> widi - pin: 3333
--> joma - pin: 4444
+Active users to mess around:
+
+- [user: jjca - pin: 1111]
+- [user: bbki - pin: 2222]
+- [user: widi - pin: 3333]
+- [user: joma - pin: 4444]
 
 ---
 
